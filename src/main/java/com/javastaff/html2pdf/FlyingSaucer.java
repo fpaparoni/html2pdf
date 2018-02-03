@@ -1,7 +1,6 @@
 package com.javastaff.html2pdf;
 
 import com.lowagie.text.DocumentException;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -18,7 +17,7 @@ public class FlyingSaucer {
     public static void main(String a[]) throws IOException, FileNotFoundException, DocumentException {
         simpleTest();
         standardTest();
-        cssTest();
+        imageCSSTest();
     }
 
     private static void simpleTest() throws FileNotFoundException, DocumentException, IOException {
@@ -42,7 +41,7 @@ public class FlyingSaucer {
         Document d = Jsoup.parse(new URL("https://raw.githubusercontent.com/fpaparoni/html2pdf/master/html/standard.html"),5000);
         d.outputSettings().syntax(Document.OutputSettings.Syntax.xml);   
 		
-        renderer.setDocumentFromString(d.outerHtml(),"https://raw.githubusercontent.com/fpaparoni/html2pdf/master/html/");
+        renderer.setDocumentFromString(d.outerHtml());
         renderer.layout();
 
         String fileNameWithPath = "standard.pdf";
@@ -53,7 +52,7 @@ public class FlyingSaucer {
         System.out.println("Standard PDF created." );
     }
 
-    private static void cssTest() throws MalformedURLException, IOException, DocumentException {
+    private static void imageCSSTest() throws MalformedURLException, IOException, DocumentException {
         ITextRenderer renderer = new ITextRenderer();
 
         Document d = Jsoup.parse(new URL("https://raw.githubusercontent.com/fpaparoni/html2pdf/master/html/css.html"),5000);
@@ -61,10 +60,10 @@ public class FlyingSaucer {
 
         System.out.println(d.outerHtml());
 
-        renderer.setDocumentFromString(d.outerHtml());
+        renderer.setDocumentFromString(d.outerHtml(),"https://raw.githubusercontent.com/fpaparoni/html2pdf/master/html/");
         renderer.layout();
 
-        String fileNameWithPath = "css.pdf";
+        String fileNameWithPath = "imageCSS.pdf";
         FileOutputStream fos = new FileOutputStream( fileNameWithPath );
         renderer.createPDF( fos );
         fos.close();

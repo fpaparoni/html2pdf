@@ -1,4 +1,4 @@
-package com.javastaff.html2pdf;
+package com.javastaff.html2pdf.flyingsaucer;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -7,7 +7,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
-public class HelloPDFWithEntity {
+public class XHTML {
 	public static void main(String a[]) throws Exception {
 		ITextRenderer renderer = new ITextRenderer();
 		

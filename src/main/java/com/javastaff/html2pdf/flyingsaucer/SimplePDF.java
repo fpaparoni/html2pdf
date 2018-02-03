@@ -1,11 +1,11 @@
-package com.javastaff.html2pdf;
+package com.javastaff.html2pdf.flyingsaucer;
 
 import java.io.File;
 import java.io.FileOutputStream;
 
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
-public class HelloPDF {
+public class SimplePDF {
 	public static void main(String a[]) throws Exception {
 		ITextRenderer renderer = new ITextRenderer();
 

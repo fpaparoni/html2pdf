@@ -1,4 +1,4 @@
-package com.javastaff.html2pdf;
+package com.javastaff.html2pdf.flyingsaucer;
 
 import java.io.File;
 import java.io.FileOutputStream;

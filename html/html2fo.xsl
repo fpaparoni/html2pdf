@@ -7,17 +7,8 @@
   <xsl:output method="xml"/>
 
   <!-- ============================================
-    This stylesheet transforms most of the common
-    HTML elements into XSL formatting objects.  
-
-    This version written 1 November 2002 by
-    Doug Tidwell, dtidwell@us.ibm.com.
-
-    Last updated 2 December 2012 by Doug Tidwell for
-    compatibility with FOP 1.1.
-
-    Brought to you by your friends at developerWorks:
-    ibm.com/developerWorks.
+    Original version from ibm developerWorks
+	https://www.ibm.com/developerworks/library/x-xslfo2app/index.html
     =============================================== -->
 
   <!-- ============================================

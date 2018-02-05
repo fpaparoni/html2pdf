@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rubrica>
+  <proprietario>Federico</proprietario>
+  <contatto>
+    <nome>Andrea</nome>
+    <cognome>Bianchi</cognome>
+    <numero>1234567890</numero>
+    <email>andrea.bianchi@email</email>
+  </contatto>
+  <contatto>
+    <nome>Pino</nome>
+    <cognome>Verdi</cognome>
+    <numero>20304050</numero>
+    <email>pino.verdi@email</email>
+  </contatto>
+  <contatto>
+    <nome>Mario</nome>
+    <cognome>Rossi</cognome>
+    <numero>987654321</numero>
+    <email>mario.rossi@email</email>
+  </contatto>
+</rubrica>

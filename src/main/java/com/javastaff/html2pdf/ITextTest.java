@@ -84,7 +84,6 @@ public class ITextTest {
  
         @Override
         public Image retrieve(String src) {
-            System.out.println("PASSO DI QUI "+src);
             int pos = src.indexOf("base64,");
             try {
                 if (src.startsWith("data") && pos > 0) {
@@ -103,9 +102,7 @@ public class ITextTest {
             }
         }
  
-        @Override
         public String getImageRootPath() {
-            System.out.println("PASSO DI QUA ");
             return baseUrl;
         }
     }
